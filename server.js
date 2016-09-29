@@ -5,7 +5,8 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne = {
+var articles = { 
+articleOne = {
     title: "Article one | Ramarao Nenavath",
     heading: "Article One",
     date: "sep 30",
@@ -17,6 +18,30 @@ var articleOne = {
         <p>this is the content fot my first article. this is the content fot my first article. this is the content fot my first article. this is the content fot my first article. this is the content fot my first article. this is the content fot my first article
         </p> `
     
+},
+artcleTwo = {
+    title: "Article two | Ramarao Nenavath",
+    heading: "Article two",
+    date: "sep 30, 2016",
+    content: `
+       <p> Hey, this is second article, have fun buddy. Hey, this is second article, have fun buddy.  Hey, this is second article, have fun buddy.  Hey, this is second article, have fun buddy. </p>
+       <p> Hey, this is second article, have fun buddy. Hey, this is second article, have fun buddy.  Hey, this is second article, have fun buddy.  Hey, this is second article, have fun buddy. </p>
+       <p> Hey, this is second article, have fun buddy. Hey, this is second article, have fun buddy.  Hey, this is second article, have fun buddy.  Hey, this is second article, have fun buddy. </p>
+       <p> Hey, this is second article, have fun buddy. Hey, this is second article, have fun buddy.  Hey, this is second article, have fun buddy.  Hey, this is second article, have fun buddy. </p>
+       `
+    },
+articleThree = {
+    title: "Article three | Ramarao Nenavath",
+    heading: "Article three",
+    date: "sep 31, 2016",
+    content: `
+        <p>My third article, yeas it is my third article, My third article, yeas it is my third article, My third article, yeas it is my third article, My third article, yeas it is my third article, My third article, yeas it is my third article, 
+         </p>
+         <p>My third article, yeas it is my third article, My third article, yeas it is my third article, My third article, yeas it is my third article, My third article, yeas it is my third article, My third article, yeas it is my third article, 
+       </p>
+        <p>My third article, yeas it is my third article, My third article, yeas it is my third article, My third article, yeas it is my third article, My third article, yeas it is my third article, My third article, yeas it is my third article, 
+        </p> `
+    }
 };
 
 function createTemplate(data) {
