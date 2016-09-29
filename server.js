@@ -19,7 +19,7 @@ var articles = {
         </p> `
     
 },
-'artcle-two': {
+'article-two': {
     title: "Article two | Ramarao Nenavath",
     heading: "Article two",
     date: "sep 30, 2016",
