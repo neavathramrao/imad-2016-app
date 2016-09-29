@@ -19,12 +19,12 @@ var articleOne = {
     
 };
 
-function createTemplete(data) {
+function createTemplate(data) {
     var title = data.title;
     var heading = data.heading;
     var date = data.date;
     var content = data.content;
-    var htmltemplete = `
+    var htmltemplate = `
         <html>
         <head>
             <title>
