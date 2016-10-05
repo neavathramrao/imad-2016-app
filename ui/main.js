@@ -6,6 +6,12 @@ element.innerHTML = ("I Have changed this to new value");
 
 var img = document.getElementById("ram");
 
+var marginLefet = o;
+function moveRight () {
+    marginLeft = marginLeft + 10;
+    img.style.marginLeft = marginLeft + "px";
+};
+
 img.onclick = function () {
-    img.style.marginLeft = '100px';
+    var interval = setInterval(moveRight, 100);
 };
