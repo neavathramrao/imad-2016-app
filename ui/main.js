@@ -21,5 +21,10 @@ button.onclick = function () {
     //Make request
     request.open("GET", "http://neavathramrao.imad.hasura-app.io/counter", true);
     request.send(null);
-
 };
+
+var nameInput = document.getElementById("name");
+var nameInput = nameInput.value;
+submit.onclick = function () {
+    
+}
