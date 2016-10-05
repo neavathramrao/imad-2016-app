@@ -6,7 +6,7 @@ element.innerHTML = ("I Have changed this to new value");
 
 var img = document.getElementById("ram");
 
-var marginLefet = 0;
+var marginLeft = 0;
 function moveRight () {
     marginLeft = marginLeft + 10;
     img.style.marginLeft = marginLeft + "px";
