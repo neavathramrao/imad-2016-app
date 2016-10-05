@@ -26,5 +26,11 @@ button.onclick = function () {
 var nameInput = document.getElementById("name");
 var nameInput = nameInput.value;
 submit.onclick = function () {
-    
-}
+    var name = ['Name1', 'Name2', 'Name3'];
+    var list = '';
+    for (var i=0; i< names.length; i++) {
+        list += '<li>' + names[i] + '</li>';
+    }
+    var ul = document.getElementById("namelist");
+    ul.innerHTML = list;
+};
